@@ -1,0 +1,110 @@
+.sales-team-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e9f0f1;
+  padding: 20px;
+}
+
+.error-message,
+.success-message {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #f44336;
+  height: 50px;
+  width: 300px;
+}
+
+.success-message {
+  background-color: #4caf50;
+  height: 50px;
+  width: 300px;
+  justify-content: center;
+}
+
+.file-upload-container {
+  background-color: #7dffff;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  margin: 20px;
+  text-align: center;
+  width: 500px;
+}
+
+.form-container {
+  background-color: #7dffff;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin: 20px;
+  width: 500px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='number'],
+select,
+input[type='date'] {
+  width: 50%;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.save-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #4d78d3;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #4d78d3;
+}
+
+.save-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.file-upload-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-upload-container label,
+.file-upload-container input[type='file'],
+.file-upload-container .save-button {
+  margin-bottom: 10px;
+}
+

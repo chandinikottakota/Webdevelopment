@@ -1,0 +1,84 @@
+/* saleschart.css */
+
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow charts to wrap to the next line on smaller screens */
+  }
+  
+  .chart-container {
+    flex: 1 1 400px; /* Adjust the width of each chart container */
+    margin: 20px;
+    background-color: #F0F0F0;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 20px;
+    height: 500px;
+    overflow: auto;
+  }
+  
+  .chart-item {
+    margin-bottom: 20px;
+  }
+  
+  .chart-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .chart-content {
+    margin-top: 20px;
+  }
+  
+  .pie-chart-item {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Adjust the width and height of the pie chart */
+  .pie-chart-item .chart-content canvas {
+    width: 100% !important;
+    height: 300px !important;
+  }
+  
+  /* Adjust the background colors of the charts and graphs */
+  .chart-item h2 {
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .chart-item:nth-child(1) .chart-box {
+    background-color: #E6E6E6;
+  }
+  
+  .chart-item:nth-child(2) .chart-box {
+    background-color: #F2F2CC;
+  }
+  
+  .chart-item:nth-child(3) .chart-box {
+    background-color: #FFD9D9;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .chart-container {
+      flex-basis: 100%; /* Set the width to 100% on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chart-container {
+      padding: 10px; /* Adjust padding on smaller screens */
+    }
+  
+    .chart-item {
+      margin-bottom: 10px; /* Adjust margin on smaller screens */
+    }
+  
+    .pie-chart-item .chart-content canvas {
+      height: 200px !important; /* Adjust height on smaller screens */
+    }
+  }
+  
